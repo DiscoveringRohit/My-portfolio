@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="javascript.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div >
+                <h1 class="name">DiscoveringRohit <img  src="photos/DiscoveringRohit logo.jpg " height="40" ></h1>
+                
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <!-- <a href="#coding">Coding</a>
+                <a href="#content">Content Creation</a>
+                <a href="#academic">Academic</a> -->
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section with 3D Animation -->
+        <section id="home" class="hero">
+            <div id="canvas-container"></div>
+            <div class="hero-content">
+                <h1 class="animate-text">DiscoveringRohit</h1>
+                <p class="animate-text">Full-Stack Developer & Content Creator</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">View Projects</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>The Human Behind The Screen</h2>
+                </div>
+                
+                <div class="about-content">
+                    <div class="profile-photo-container">
+                        <img src="photos/profile.jpg" alt="Rohit's Photo" class="profile-photo">
+                    </div>
+                    
+                    <div class="intro">
+                        <p>Hi, I'm <span class="highlight">Rohit kumar</span></p>
+                        <p>A Computer Science student and aspiring Full-Stack Developer.</p>
+                        <p>I'm passionate about building user-focused digital experiences and continuously exploring new technologies.</p>
+                        <p>Alongside coding, I create content to share my learning journey.</p>
+                        <p>Aiming to inspire and grow with a like-minded community.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- Academic section -->
+        <!-- <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Academic Qualifications</h2>
+                </div>
+                <div class="about-content">
+                    <div class="profile-photo-container">
+                        <img src="photos/ITER1.jpg">
+                    </div>
+                </div>
+                <div class="intro">
+                    <ul>
+                <li><strong>Bachelor of Science in Computer Science</strong> - Institute of Technical Education and Research [Jagmohan Nagar, Bhubaneswar]</li>
+                <li>Duration: [Start Year] - [End Year]</li>
+                <li>CGPA: [Your CGPA] (if applicable)</li>
+            </ul>
+                </div>
+            </div>
+            </section> -->
+
+
+        <!-- Project Categories Navigation -->
+        <section class="project-categories">
+            <div class="container">
+                <div class="category-tabs">
+                    <button class="tab-btn active" data-target="all-projects">All Projects</button>
+                    <button class="tab-btn" data-target="coding-projects">Coding</button>
+                    <button class="tab-btn" data-target="content-projects">Content Creation</button>
+                    <button class="tab-btn" data-target="academic-projects">Academic</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>My Projects</h2>
+                    <p>Explore my latest work across different domains</p>
+                </div>
+                
+                <div id="all-projects" class="project-container active">
+                    <!-- Featured Projects - Mix of all categories -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <video class="project-video" poster="videos/REEL 2.mp4">
+                                <source src="videos/REEL 2.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <button class="play-btn">▶</button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Cinematic Video Production</h3>
+                            <p>Professional video editing with special effects and color grading</p>
+                            <div class="project-tags">
+                                <span>Content Creation</span>
+                                <span>Adobe Premiere</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="photos/portflio.frount_page.png" alt="Portfolio Website">
+                        </div>
+                        <div class="project-info">
+                            <h3>Portfolio Website</h3>
+                            <p>Custom-built responsive website using HTML, CSS and JavaScript</p>
+                            <div class="project-tags">
+                                <span>Web Development</span>
+                                <span>Frontend</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <video class="project-video" poster="videos/thumbnail2.jpg">
+                                <source src="videos/grading.mov" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <button class="play-btn">▶</button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Color Grading Project</h3>
+                            <p>Professional color correction and mood setting for video content</p>
+                            <div class="project-tags">
+                                <span>Content Creation</span>
+                                <span>Color Grading</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Coding Projects -->
+                <div id="coding-projects" class="project-container">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="photos/to do list.jpg" alt="To-Do App">
+                        </div>
+                        <div class="project-info">
+                            <h3>JavaScript To-Do App</h3>
+                            <p>Task management application with data persistence</p>
+                            <p>coming soon...</p>
+                            <div class="project-tags">
+                                <span>JavaScript</span>
+                                <span>Web Development</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="photos/portflio.frount_page.png" alt="Portfolio Website">
+                        </div>
+                        <div class="project-info">
+                            <h3>Portfolio Website</h3>
+                            <p>Custom-built responsive website using HTML, CSS and JavaScript</p>
+                            <div class="project-tags">
+                                <span>Web Development</span>
+                                <span>Frontend</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="photos/daily planner.jpg" alt="Daily planner">
+                        </div>
+                        <div class="project-info">
+                            <h3>Daily planner</h3>
+                            <p>A simple daily planner web app that lets users schedule tasks hour-by-hour and saves them using localStorage.</p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>javaScrit</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Content Creation Projects -->
+                <div id="content-projects" class="project-container">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <video class="project-video" poster="videos/thumbnail1.jpg">
+                                <source src="videos/REEL 2.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <button class="play-btn">▶</button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Cinematic Video Production</h3>
+                            <p>Professional video editing with special effects and color grading</p>
+                            <div class="project-tags">
+                                <span>Content Creation</span>
+                                <span>da vinci resolve</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <video class="project-video" poster="videos/thumbnail2.jpg">
+                                <source src="videos/grading.mov" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <button class="play-btn">▶</button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Color Grading Project</h3>
+                            <p>Professional color correction and mood setting for video content</p>
+                            <div class="project-tags">
+                                <span>Content Creation</span>
+                                <span>Color Grading</span>
+                                <span>da vinci resolve</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <video class="project-video" poster="videos/thumbnail3.jpg">
+                                <source src="videos/hostal.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-overlay">
+                                <button class="play-btn">▶</button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Social Media Content</h3>
+                            <p>Engaging short-form content optimized for social media platforms</p>
+                            <div class="project-tags">
+                                <span>Social Media</span>
+                                <span>Content Creation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+                <!-- Academic Projects -->
+                <div id="academic-projects" class="project-container">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="photos/iter.jpg" alt="ITER picture">
+                        </div>
+                        <div class="project-info">
+                            <h3> B.Tech in Computer Science and Engineering</h3>
+                            <p>ITER, SOA University | 2023 – Present </p>
+                            <div class="project-tags">
+                                <span>Research</span>
+                                <span>Academic</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="photos/p2.jpg" alt="Algorithm Project">
+                        </div>
+                        <div class="project-info">
+                            <h3>Data Structures & Algorithms</h3>
+                            <p>Web Development / Java / Python</p>
+                            <div class="project-tags">
+                                <span>Algorithms</span>
+                                <span>Data Structures</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="photos/achivement.jpg" alt="Achievementsa & Certifications">
+                        </div>
+                        <div class="project-info">
+                            <h3>Achievements & Certifications</h3>
+                            <p>Class 10 & 12 Board Scores</p>
+                            <p>Hackathons / Tech Competitions</p>
+                            <p>Awards</p>
+                            <div class="project-tags">
+                                <span>leetcode</span>
+                                <span>Hackerrank</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Get In Touch</h2>
+                    <p>Let's talk about your project or just say hello</p>
+                </div>
+                
+                <div class="contact-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Mobile Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Your mobile number" pattern="[0-9]{10}" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                    
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <div class="icon">📧</div>
+                            <div class="details">
+                                <h3>Email</h3>
+                                <p>1009Rohitkumar@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="icon">📱</div>
+                            <div class="details">
+                                <h3>Phone</h3>
+                                <p>+91 8102809254</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="icon">🌐</div>
+                            <div class="details">
+                                <h3>Social Media</h3>
+                                <div class="social-links">
+                                    <a href="https://www.instagram.com/discoveringrohit?igsh=d28zMWd6cXc3Y3o5 " target="_blank"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/in/rohit-kumar-604884333" target="_blank"><i class="fab fa-linkedin"></i>n</a>
+                                    <a href="https://github.com/DiscoveringRohit" target="_blank"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>DiscoveringRohit</h3>
+                    <p>Turning ideas into reality</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Connect With Me</h4>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/discoveringrohit?igsh=d28zMWd6cXc3Y3o5 " target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/rohit-kumar-604884333" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/DiscoveringRohit" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Rohit. All rights reserved. Designed & built with ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for Contact Form on Mobile -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Contact Me</h2>
+            <form id="modal-contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="modal-name">Name</label>
+                    <input type="text" id="modal-name" name="name" placeholder="Your name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="modal-email">Email</label>
+                    <input type="email" id="modal-email" name="email" placeholder="Your email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="modal-phone">Mobile Number</label>
+                    <input type="tel" id="modal-phone" name="phone" placeholder="Your mobile number" pattern="[0-9]{10}" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="modal-message">Message</label>
+                    <textarea id="modal-message" name="message" placeholder="Your message" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
